@@ -7,8 +7,27 @@
     transition: 0s all;
     cursor: pointer;
 
-    &--active {
-        color: $white;
-        background: $black;
+    &:hover {
+        background: $grey-light-hover;
     }
+
+    &--active {
+        &, &:hover {
+            color: $white;
+            background: $black;
+        }
+    }
+
+    &--prev, &--next {
+        border: 1px solid $grey-light;
+        background: $white;
+    }
+
+    &--prev {
+        svg {
+            transform: rotateZ(180deg);
+        }
+    }
+
+    
 }
