@@ -1,0 +1,54 @@
+.v-qtim__article {
+
+    &-box {
+        width: 100%;
+        transform: translateY(0);
+    }
+
+    &:hover {
+        .v-qtim__article-box {
+            transform: translateY(-20px);
+        }
+
+        a { opacity: 1; }
+    }
+
+    
+    &-img {
+        position: relative;
+        // width: 100%;
+        height: 280px;
+        overflow: hidden;
+
+        img {
+            // position: absolute;
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    p, a { font-weight: 400; }
+
+    &-descr {
+        width: 100%;
+        overflow: hidden;
+        
+        p {
+
+        }
+    }
+
+    p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        word-wrap: break-word;
+        font-weight: 400;
+        margin-top: 24px;
+    }
+
+    a { color: $pink; opacity: 0;}
+
+}

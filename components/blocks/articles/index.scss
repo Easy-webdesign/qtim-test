@@ -1,0 +1,11 @@
+.v-qtim__articles {
+    margin: 59px 0 180px;
+
+    &-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 280px 280px 280px 280px;
+        gap: 32px;
+    }
+    
+}

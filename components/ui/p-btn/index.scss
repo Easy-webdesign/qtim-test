@@ -1,0 +1,14 @@
+.v-qtim__btn-p {
+    @include flex(f, c, c);
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: $grey-light;
+    transition: 0s all;
+    cursor: pointer;
+
+    &--active {
+        color: $white;
+        background: $black;
+    }
+}

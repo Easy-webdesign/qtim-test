@@ -1,0 +1,8 @@
+.v-qtim__btn {
+    @include flex(f, c, c);
+    color: $white;
+    border-radius: 55px;
+    padding: 16px 32px;
+    background: $black;
+    cursor: pointer;
+}

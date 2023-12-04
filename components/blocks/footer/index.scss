@@ -1,0 +1,78 @@
+.v-qtim__footer {
+    padding: 140px 112px 0;
+    background: $pink;
+    overflow: hidden;
+
+    p, a, span { font-size: 16px; }
+
+    &-text { margin-bottom: 56px; }
+    
+    &-contacts {
+        @include flex(f, sb, fs);
+        margin-bottom: 273px;
+
+        & > a {
+            display: block;
+            p {
+                font-size: 112px;
+                border-bottom: 1px solid $black;
+            }
+        }
+
+        ul {
+            width: 40%;
+            // margin-top: 75px;
+
+            li {
+                margin-bottom: 36px;
+
+                &:last-child { margin-bottom: 0; }
+
+                * { letter-spacing: 0.16px; }
+
+                
+                p { margin-bottom: 12px; }
+                span { display: block; width: 152px; }
+                img { margin-top: 6px; }
+
+                &:first-child {
+                    @include flex(f, sb, fs, col)
+                }
+            }
+        }
+    }
+
+    &-soc {
+        position: relative;
+
+        &, ul { @include flex; }
+
+        ul {
+            margin-bottom: 30px;
+
+            &:first-child li { margin-right: 32px; }
+            &:last-child li { margin-left: 32px; }
+
+            li { border-bottom: 1px solid $black; }
+        }
+    }
+
+    &-go {
+        position: absolute;
+        @include flex(f, c);
+        width: 358px;
+        height: 358px;
+        left: 50%;
+        bottom: -330%;
+        border-radius: 100%;
+        transform: translateX(-50%);
+        background: $black;
+        cursor: pointer;
+
+        p {
+            font-size: 32px;
+            color: $white;
+            margin-bottom: 50px;
+        }
+    }
+}

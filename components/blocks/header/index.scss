@@ -1,0 +1,38 @@
+.v-qtim {
+    &__header, &__nav, &__nav ul, &__nav-ui {
+        @include flex;
+    }
+
+    &__header {
+        padding: 47px 40px 49px;
+    }
+
+    &__logo {
+        @include flex(f, c)
+    }
+
+    &__nav {
+        ul {
+            li {
+                padding-left: 58px;
+                cursor: pointer;
+            }
+        }
+
+        &-ui {
+            padding-left: 90px;
+        }
+    }
+
+    &__lang {
+        @include flex(f, c, c);
+        width: 52px;
+        height: 52px;
+        padding: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.10){
+            radius: 100%
+        };
+        margin-right: 16px;
+        cursor: pointer;
+    }
+}

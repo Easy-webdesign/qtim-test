@@ -1,0 +1,26 @@
+$flex-params: (
+    f: flex,
+    inf: inline-flex,
+    sb: space-between,
+    sa: space-around,
+    fs: flex-start,
+    fe: flex-end,
+    c: center,
+    r: row,
+    col: column,
+);
+
+@function flexParams($param) {
+    @each $par, $val in $flex-params {
+        @if $param ==$par {
+            @return $val;
+        }
+    }
+}
+
+@mixin flex($d: f, $jc: sb, $ai: c, $dir: r) {
+    display: flexParams($d);
+    justify-content: flexParams($jc);
+    align-items: flexParams($ai);
+    flex-direction: flexParams($dir);
+}

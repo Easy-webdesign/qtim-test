@@ -1,0 +1,8 @@
+.v-qtim__pagination {
+    @include flex(f, fs);
+    margin-top: 50px;
+
+    & > * {
+        margin-right: 8px;
+    }
+}
